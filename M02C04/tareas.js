@@ -2,7 +2,6 @@
 
 const { log } = require( 'console' );
 const { readFileSync, writeFileSync } = require( 'fs' );
-const { argv } = require('process');
 const mostrarMensaje = require( './mensajes' );
 
 module.exports = {
@@ -17,7 +16,7 @@ module.exports = {
 		
 		let listadoDeTareas = module.exports.leerJSON( archivo );
 
-		listadoDeTareas.push( { titulo: argv[3], estado: 'pendiente' } );
+		listadoDeTareas.push( { titulo: tareaAGuardar, estado: 'pendiente' } );
 
 		writeFileSync( archivo, JSON.stringify( listadoDeTareas, null, 3 ), 'utf-8' );
 
