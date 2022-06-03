@@ -42,7 +42,7 @@ module.exports = {
 		if ( tareaAGuardar !== undefined ) {
 
 			module.exports.escribirJSON( archivo, tareaAGuardar );
-			mostrarMensaje( 'Tarea guardada éxito', 0 );
+			mostrarMensaje( 'Tarea guardada con éxito', 0 );
 
 		} else { mostrarMensaje( 'Atención - Tienes que pasar una tarea', 0 ) };
 
