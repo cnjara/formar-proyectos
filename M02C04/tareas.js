@@ -13,8 +13,6 @@ module.exports = {
 
 	},
 
-
-
 	escribirJSON:	( archivo, tareaAGuardar ) => {
 		
 		let listadoDeTareas = module.exports.leerJSON( archivo );
@@ -24,8 +22,6 @@ module.exports = {
 		writeFileSync( archivo, JSON.stringify( listadoDeTareas, null, 3 ), 'utf-8' );
 
 	},
-
-
 
 	listarTareas:	archivo => {
 
@@ -41,20 +37,16 @@ module.exports = {
 
 	},
 
-
-
 	guardarTareas:	( archivo, tareaAGuardar ) => {
 
 		if ( tareaAGuardar !== undefined ) {
 
 			module.exports.escribirJSON( archivo, tareaAGuardar );
-			mostrarMensaje( 'Tarea guardada', 0 );
+			mostrarMensaje( 'Tarea guardada éxito', 0 );
 
 		} else { mostrarMensaje( 'Atención - Tienes que pasar una tarea', 0 ) };
 
 	},
-
-
 
 	filtrarPorEstado:	( archivo, estadoAFiltrar ) => {
 

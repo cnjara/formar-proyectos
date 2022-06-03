@@ -9,7 +9,7 @@ module.exports = ( mensaje, adicional ) => {
 	switch ( adicional ) {
 		
 		case undefined:
-			log( 'Las acciones disponibles son: listar' );
+			log( 'Las acciones disponibles son: listar, crear, filtrar' );
 			break;
 
 		case 'separador':
