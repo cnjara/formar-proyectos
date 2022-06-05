@@ -4,7 +4,7 @@ const { readFileSync } = require( 'fs' );
 
 module.exports = {
 
-	leer	:	( archivo ) => { 
+	listarTareas:	( archivo ) => { 
 
 		let listadoDeTareas = JSON.parse( readFileSync( archivo, 'utf-8' ) );
 

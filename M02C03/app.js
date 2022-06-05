@@ -1,12 +1,12 @@
 //Cristian Jara - Comision 15 - 2022
 
 const { argv } = require( 'process' );
-const { leer } = require( './funcionesDeTareas' );
+const { listarTareas } = require( './funcionesDeTareas' );
 const mostrarMensaje = require( './mensajes' );
 
 switch ( argv[2]?.toLowerCase() ) { //Si existe y es distinto de undefined, transforma el valor en minúsculas
 	case 'listar':
-		leer( './tareas.json' );
+		listarTareas( './tareas.json' );
 		break;
 	case undefined:
 		mostrarMensaje( 'Atención - Tienes que pasar una acción' );
