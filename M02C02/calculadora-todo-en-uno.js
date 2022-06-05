@@ -1,37 +1,41 @@
 //Cristian Jara - Comision 15 - 2022
-//Revision 1
+//Revision 2
 
-const process = require('process');
+const { argv } = require('process');
+const { log } = require('console');
 
 let operaciones = {
-	sumar		:	( a, b ) => a + b,
-	restar		:	( a, b ) => a - b,
-	multiplicar	:	( a, b ) => a * b,
-	dividir		:	( a, b ) => b === 0 ? 'No se puede dividir por cero.' : a / b
+	sumar		:	( a, b ) => `Resultado de sumar: ${a + b}`,
+	restar		:	( a, b ) => `Resultado de restar: ${a - b}`,
+	multiplicar	:	( a, b ) => `Resultado de multiplicar: ${a * b}`,
+	dividir		:	( a, b ) => `Resultado de dividir: ${b === 0 ? 'No se puede dividir por cero.' : a / b}`
 };
 
-let c = ( x ) => console.log( x );
+const { sumar } = operaciones;
+const { restar } = operaciones;
+const { multiplicar } = operaciones;
+const { dividir } = operaciones;
 
-if ( process.argv[2] === undefined ) {
+if ( argv[2] === undefined ) {
 
-	c( 'Resultado de sumar: ' + operaciones.sumar( 354, 132 ) );
-	c( 'Resultado de restar: ' + operaciones.restar( 129, 764 ) );
-	c( 'Resultado de multiplicar: ' + operaciones.multiplicar( 753, 34 ) );
-	c( 'Resultado de multiplicar: ' + operaciones.multiplicar( 0, 34 ) );
-	c( 'Resultado de dividir: ' + operaciones.dividir( 150, 25 ) );
-	c( 'Resultado de dividir: ' + operaciones.dividir( 485, 0 ) );
+	log( sumar( 354, 132 ) );
+	log( restar( 129, 764 ) );
+	log( multiplicar( 753, 34 ) );
+	log( multiplicar( 0, 34 ) );
+	log( dividir( 150, 25 ) );
+	log( dividir( 485, 0 ) );
 
 } else {
 
 	let listaOperadores = [ 'sumar', '+', 'restar', '-', 'multiplicar', '*', 'dividir', '/' ];
 
-	let operador = process.argv[2].toLowerCase();
-	let a = parseInt( process.argv[3] );
-	let b = parseInt( process.argv[4] );
+	let operador = argv[2].toLowerCase();
+	let a = parseInt( argv[3] );
+	let b = parseInt( argv[4] );
 
 	if ( [ a, b ].some( isNaN ) ) {
 
-		c('Los valores no pueden estar vacíos.');
+		log('Los valores no pueden estar vacíos.');
 
 	} else {
 
@@ -40,25 +44,25 @@ if ( process.argv[2] === undefined ) {
 			switch( operador ) {
 				case listaOperadores[0]:
 				case listaOperadores[1]:
-					c( 'Resultado de sumar: ' + operaciones.sumar( a, b ) );
+					log( sumar( a, b ) );
 					break;
 				case listaOperadores[2]:
 				case listaOperadores[3]:
-					c( 'Resultado de restar: ' + operaciones.restar( a, b ) );
+					log( restar( a, b ) );
 					break;
 				case listaOperadores[4]:
 				case listaOperadores[5]:
-					c( 'Resultado de multiplicar: ' + operaciones.multiplicar( a, b ) );
+					log( multiplicar( a, b ) );
 					break;
 				case listaOperadores[6]:
 				case listaOperadores[7]:
-					c( 'Resultado de dividir: ' + operaciones.dividir( a, b ) );
+					log( dividir( a, b ) );
 					break;
 				default:
-					c( 'Ups!' );
+					log( 'Ups!' );
 			};
 
-		} else { c('Operador no permitido.'); };
+		} else { log('Operación no permitida.'); };
 
 	};
 

@@ -1,8 +1,6 @@
 //Cristian Jara - Comision 15 - 2022
-//Revision 1
+//Revision 2
 
-let sumar = ( a, b ) => a + b;
-
-module.exports = sumar;
-
-/* console.log( sumar( 1, 8 ) ); */
+module.exports = {
+	sumar:	( a, b ) => `Resultado de sumar: ${a + b}`,
+};

@@ -1,9 +1,6 @@
 //Cristian Jara - Comision 15 - 2022
-//Revision 1
+//Revision 2
 
-let multiplicar = ( a, b ) => a * b;
-
-module.exports = multiplicar;
-
-/* console.log( multiplicar( 3, 0 ) ); //Multiplicar por 0
-console.log( multiplicar( 4, 7 ) ); */
+module.exports = {
+	multiplicar:	( a, b ) => `Resultado de multiplicar: ${a * b}`,
+};

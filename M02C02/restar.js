@@ -1,8 +1,6 @@
 //Cristian Jara - Comision 15 - 2022
-//Revision 1
+//Revision 2
 
-let restar = ( a, b ) => a - b;
-
-module.exports = restar;
-
-/* console.log( restar( 3, 9 ) ); */
+module.exports = {
+	restar:	( a, b ) => `Resultado de restar: ${a - b}`,
+};
