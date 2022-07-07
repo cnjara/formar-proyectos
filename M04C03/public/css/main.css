@@ -1,0 +1,24 @@
+.body__main {
+	width: 100%;
+	background-color: var(--GrisClaro);
+}
+.body__main--banner {
+	width: 100%;
+	background-color: var(--GrisOscuro);
+}
+.body__main--banner img {
+	width: 100%;
+}
+.body__main__section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.body__main__section--article {
+	width: 90%;
+	background-color: var(--Blanco);
+}
+.body__main__section--article img {
+	width: 100%;
+}
