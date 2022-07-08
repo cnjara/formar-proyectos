@@ -6,12 +6,30 @@
 	align-items: center;
 	justify-content: center;
 }
-.body__header--logo {
-	width: 100%;
-	height: 100%;
-	display: block;
+.body__header form {
+	margin: 20px 0;
+	padding: 10px;
+	background-color: var(--Blanco);
+	border-radius: 4px;
 }
-.burger-menu {
+.body__header form input, button {
+	border: none;
+	background-color: var(--Blanco);
+	margin: 0;
+	padding: 0;
+	color: var(--GrisOscuro);
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+.body__header--logo {
+	width: 80%;
+	display: block;
+	margin-top: 20px;
+}
+.burger-menu i {
 	background-color: var(--Celeste);
 	color: var(--Blanco);
 	font-size: var(--tamañoIconoMediano);
@@ -22,6 +40,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin: 20px 0;
 }
 .body__header ul li {
 	list-style: none;
