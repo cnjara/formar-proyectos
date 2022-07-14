@@ -1,0 +1,25 @@
+:root {
+	--Amarillo: #EAC926;
+	--Azul: #03264C;
+	--Blanco: #FFFFFF;
+	--Celeste: #1259C3;
+	--GrisOscuro: #666;
+	--GrisClaro: #EBEBEB;
+	--Verde: #39B54A;
+	--tamañoNormal: 12px;
+	--tamañoTitular: 24px;
+	--tamañoPrecios: 18px;
+	--tamañoDescuentos: 16px;
+	--tamañoDescripciones: 16px;
+	--tamañoIconoGrande: 2em;
+	--tamañoIconoMediano: 24px;
+	--tamañoIconoPequeño: 18px;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+h2 {
+	font-size: var(--tamañoTitular);
+	color: var(--GrisOscuro);
+	font-weight: bold;
+}

@@ -1,0 +1,34 @@
+.body__footer {
+	width: 100%;
+	color: var(--GrisOscuro);
+	background-color: var(--Blanco);
+	text-align: center;
+}
+.body__footer h4, p {
+	margin: 0;
+	padding: 0;
+}
+.body__footer h4 {
+	font-size: var(--tamañoDescripciones);
+}
+.body__footer p {
+	font-size: var(--tamañoNormal);
+}
+.body__footer__section--article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 30px 0 30px;
+}
+.body__footer__section--article:last-child {
+	padding-bottom: 40px;
+}
+.body__footer__section--article:last-child p {
+	align-self: start; /* Correcciones Julian */
+}
+.body__footer__section--article i {
+	color: var(--Celeste);
+	font-size: var(--tamañoIconoGrande);
+	margin-bottom: 10px;
+}
