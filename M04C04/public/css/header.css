@@ -7,7 +7,7 @@
 	justify-content: center;
 }
 .body__header a {
-	text-decoration: none; /* Correcciones Julian */
+	text-decoration: none;
 }
 .body__header form {
 	margin: 20px 0;
@@ -46,11 +46,24 @@ input:focus, select:focus, textarea:focus, button:focus {
 	margin: 20px 0;
 }
 .body__header--menu {
-	align-self: start; /* Correcciones Julian */
+	align-self: start;
+	display: none; /* * M04C04 - Solo para la versión mobile, ocultar el site y el login navbar. */
 }
 .body__header--menu ul li {
 	list-style: none;
 }
 .body__header--menu ul li a {
 	text-decoration: none;
+}
+
+@media (min-width: 361px) { /* * M04C04 - Navegación en tablets (ancho mínimo 361 px). */
+	.burger-menu {
+		display: none; /* * M04C04 - Para las versiones desktop y tablet ... ocultar la imagen del menú hamburguesa. */
+	}
+	.body__header--menu {
+		display: block; /* * M04C04 - Para las versiones desktop y tablet mostrar el site y login navbar. */
+	}
+}
+@media (min-width: 769px) { /* * M04C04 - Navegación en desktop (ancho mínimo 769 px). */
+
 }

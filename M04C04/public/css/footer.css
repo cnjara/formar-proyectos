@@ -25,10 +25,17 @@
 	padding-bottom: 40px;
 }
 .body__footer__section--article:last-child p {
-	align-self: start; /* Correcciones Julian */
+	align-self: start;
 }
 .body__footer__section--article i {
 	color: var(--Celeste);
 	font-size: var(--tamañoIconoGrande);
 	margin-bottom: 10px;
+}
+
+@media (min-width: 361px) { /* * M04C04 - Navegación en tablets (ancho mínimo 361 px). */
+
+}
+@media (min-width: 769px) { /* * M04C04 - Navegación en desktop (ancho mínimo 769 px). */
+
 }
