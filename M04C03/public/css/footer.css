@@ -24,7 +24,9 @@
 .body__footer__section--article:last-child {
 	padding-bottom: 40px;
 }
-
+.body__footer__section--article:last-child p {
+	align-self: start; /* Correcciones Julian */
+}
 .body__footer__section--article i {
 	color: var(--Celeste);
 	font-size: var(--tamañoIconoGrande);
