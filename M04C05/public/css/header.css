@@ -10,11 +10,21 @@
 	text-decoration: none;
 	color: var(--Negro);
 }
+.body__header--container {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+}
 .body__header form {
 	margin: 20px 0;
 	padding: 10px;
 	background-color: var(--Blanco);
 	border-radius: 4px;
+	height: fit-content;
+	width: 50%; /* * M04C05 - Barra de búsqueda: tiene que medir el 50% de su contenedor. */
+	overflow: hidden;
 }
 .body__header form input, button {
 	border: none;
@@ -22,6 +32,11 @@
 	margin: 0;
 	padding: 0;
 	color: var(--GrisOscuro);
+	width: fit-content;
+	display: inline-block;
+}
+.body__header form input {
+	width: 80%;
 }
 
 input:focus, select:focus, textarea:focus, button:focus {
@@ -32,6 +47,7 @@ input:focus, select:focus, textarea:focus, button:focus {
 	width: 80%;
 	display: block;
 	margin-top: 20px;
+	width: 50%; /* * M04C05 - Logo: tiene que medir el 50% de su contenedor. */
 }
 .burger-menu i {
 	background-color: var(--Celeste);
@@ -48,7 +64,7 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 .body__header--menu {
 	align-self: start;
-	display: none; /* * M04C04 - Solo para la versión mobile, ocultar el site y el login navbar. */
+	display: none;
 }
 .body__header--menu ul li {
 	list-style: none;
@@ -57,14 +73,14 @@ input:focus, select:focus, textarea:focus, button:focus {
 	text-decoration: none;
 }
 
-@media (min-width: 361px) { /* * M04C04 - Navegación en tablets (ancho mínimo 361 px). */
+@media (min-width: 768px) {
 	.burger-menu {
-		display: none; /* * M04C04 - Para las versiones desktop y tablet ... ocultar la imagen del menú hamburguesa. */
+		display: none;
 	}
 	.body__header--menu {
-		display: block; /* * M04C04 - Para las versiones desktop y tablet mostrar el site y login navbar. */
+		display: block;
 	}
 }
-@media (min-width: 769px) { /* * M04C04 - Navegación en desktop (ancho mínimo 769 px). */
+@media (min-width: 1024px) {
 
 }
