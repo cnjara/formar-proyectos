@@ -1,4 +1,3 @@
-@import url('normalize.css');
 @import url('general.css');
 @import url('header.css');
 @import url('main.css');
@@ -15,8 +14,9 @@
   justify-content: center;
   margin: 0;
   padding: 0;
-  background-color: var(--GrisClaro);
 }
-* {
-  box-sizing: border-box;
+/* * RESET */
+a, div, img {
+  margin: 0;
+  padding: 0;
 }
