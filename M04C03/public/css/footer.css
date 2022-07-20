@@ -1,0 +1,14 @@
+.body__footer {
+	width: 100%;
+	background-color: var(--Blanco);
+}
+.body__footer__section--article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.body__footer__section--article i {
+	color: var(--Celeste);
+	font-size: var(--tamañoIconoGrande);
+}
