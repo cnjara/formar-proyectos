@@ -1,0 +1,68 @@
+.body--banner {
+	width: 100%;
+}
+.body--banner img {
+	width: 100%;
+}
+.body__main {
+	width: 90%; /* * M04C04 - ... que ocupe un 90% del ancho de la pantalla. */
+}
+.body__main__section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.body__main__section--article {
+	box-sizing: border-box;
+	width: 90%;
+	background-color: var(--Blanco);
+	margin-bottom: 10px; /* * M04C04 - Entre cada artículo hay una separación de 10 píxeles. */
+	position: relative;
+}
+.body__main__section--article img {
+	width: 100%;
+}
+.body__main__section--article div {
+	border-top: 1px solid var(--GrisClaro); /* * M04C04 - ... borde superior de 1 píxel, línea sólida y color #ebebeb. */
+	padding: 15px; /* * M04C04 - Debe tener separado el contenido de sus bordes en 15 píxeles en cada uno de sus lados. */
+}
+.body__main__section--article .fa-truck {
+	background-color: var(--Blanco);
+	color: var(--Verde);
+	border: 1px solid var(--Verde);
+	border-radius: 50%;
+	padding: 8px;
+	font-size: var(--tamañoIconoPequeño);
+	position: absolute;
+	right: 20px;
+	bottom: 34px;
+}
+.body__main__section--article h3 {
+	color: var(--GrisOscuro);
+	display: none; /* * M04C04 - Solo en el caso mobile la descripción del artículo no se visualizará. */
+}
+.body__main__article--precio {
+	font-size: var(--tamañoPrecios);
+	display: inline-block;
+}
+.body__main__article--descuento {
+	font-size: var(--tamañoDescuentos);
+	color: var(--Verde);
+	display: inline-block;
+}
+
+@media (min-width: 361px) { /* * M04C04 - Navegación en tablets (ancho mínimo 361 px). */
+	.body__main__section--article {
+		box-shadow : 0px 0px 10px rgb( 100, 100, 100 ); /* * M04C04 - Agregar box-shadow. Para los dispositivos tablet o de resoluciones superiores. */
+	}
+	.body__main__section--article h3 {
+		display: block;
+	}
+	.body__main__section--article .fa-truck {
+		bottom: 92px;
+	}
+}
+@media (min-width: 769px) { /* * M04C04 - Navegación en desktop (ancho mínimo 769 px). */
+
+}

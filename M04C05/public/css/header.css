@@ -1,0 +1,70 @@
+.body__header {
+	width: 100%;
+	background-color: var(--Amarillo);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.body__header a {
+	text-decoration: none;
+	color: var(--Negro);
+}
+.body__header form {
+	margin: 20px 0;
+	padding: 10px;
+	background-color: var(--Blanco);
+	border-radius: 4px;
+}
+.body__header form input, button {
+	border: none;
+	background-color: var(--Blanco);
+	margin: 0;
+	padding: 0;
+	color: var(--GrisOscuro);
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+.body__header--logo {
+	width: 80%;
+	display: block;
+	margin-top: 20px;
+}
+.burger-menu i {
+	background-color: var(--Celeste);
+	color: var(--Blanco);
+	font-size: var(--tamañoIconoMediano);
+	border-radius: 4px;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 20px 0;
+}
+.body__header--menu {
+	align-self: start;
+	display: none; /* * M04C04 - Solo para la versión mobile, ocultar el site y el login navbar. */
+}
+.body__header--menu ul li {
+	list-style: none;
+}
+.body__header--menu ul li a {
+	text-decoration: none;
+}
+
+@media (min-width: 361px) { /* * M04C04 - Navegación en tablets (ancho mínimo 361 px). */
+	.burger-menu {
+		display: none; /* * M04C04 - Para las versiones desktop y tablet ... ocultar la imagen del menú hamburguesa. */
+	}
+	.body__header--menu {
+		display: block; /* * M04C04 - Para las versiones desktop y tablet mostrar el site y login navbar. */
+	}
+}
+@media (min-width: 769px) { /* * M04C04 - Navegación en desktop (ancho mínimo 769 px). */
+
+}
