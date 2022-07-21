@@ -72,13 +72,7 @@
 }
 @media (min-width: 1024px) {
 	.body__main__section--article {
-		width: 22%; /* * M04C05 - ... aplicando Flexbox, solo se vea ... uatro artículos para la versión desktop. */
+		width: 22%; /* * M04C05 - ... aplicando Flexbox, solo se vea ... cuatro artículos para la versión desktop. */
 		align-self: stretch;
-	}
-	.body__main__article--precio {
-		width: 50%; /* * M04C05 - ... el precio ocupa el 30% ... del total del renglón. */
-	}
-	.body__main__article--descuento {
-		width: 50%; /* * M04C05 - ... el descuento el 70% ... del total del renglón. */
 	}
 }
