@@ -1,0 +1,74 @@
+.body__main__section--form--register {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+.body__main__section--form--register input[type=text],
+.body__main__section--form--register input[type=password],
+.body__main__section--form--register input[type=date],
+.body__main__section--form--register input[type=file],
+.body__main__section--form--register button {
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+}
+.body__main__section--form--register input[type=radio],
+.body__main__section--form--register input[type=checkbox] {
+	margin-top: 10px;
+}
+.body__main__section--form--register button {
+	background-color: var(--Celeste);
+	color: var(--Blanco);
+}
+.body__main__section--form--register button:hover {
+	cursor: pointer;
+}
+.body__main__section--form--register--columnas {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+.fixes input[type=date],
+.fixes input[type=file] {
+	width: 100%; /* Corrige Input Date */
+	background-color: var(--Blanco); /* Corrige Input File */
+	margin-bottom: 0px; /* Corrige Margen Fantasma */
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.row h3 {
+	width: 100%;
+}
+.row label {
+	margin-right: 15px;
+}
+.body__main__section--form--register--botones {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.body__main__section--form--register--botones button {
+	width: 49%;
+}
+.body__main__section--form--register--botones button:first-child {
+	background-color: var(--GrisOscuro);
+}
+
+
+
+@media (min-width: 768px) {
+	
+}
+@media (min-width: 1024px) {
+	
+}
