@@ -1,0 +1,15 @@
+{
+  "name": "m02c01-mvc",
+  "version": "1.0.0",
+  "description": "Patrones de diseño MVC",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "author": "Cristian Jara",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
