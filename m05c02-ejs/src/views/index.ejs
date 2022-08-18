@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/head') %>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <%- include('./partials/navbar') %>
+
+    <!-- Header -->
+    <%- include('./partials/header') %>
+
+    <!-- Page content -->
+    <div class="ps-content">
+      <!-- About Section -->
+      <%- include('./partials/about') %>
+
+      <hr />
+      <!-- Menu Section -->
+      <div class="ps-row ps-padding-64" id="menu">
+        <div class="ps-col l6 ps-padding-large">
+          <h1 class="ps-center">Nuestro Menu</h1>
+          <br />
+          <% productos.forEach(plato => { %>
+            <h4><a href="/detalle/<%= plato.id %>"><%= plato.nombre %></a></h4>
+            <p class="ps-text-grey"><%= plato.descripcion %> U$S <%= plato.precio %></p>
+            <br />
+          <% }) %>
+        </div>
+
+        <%- include('./partials/img-menu', { imagen: 'menu.jpg' }) %>
+      </div>
+
+      <!-- Footer -->
+      <%- include('./partials/footer') %>
+    </div>
+  </body>
+</html>
