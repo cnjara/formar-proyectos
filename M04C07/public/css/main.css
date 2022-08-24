@@ -1,0 +1,102 @@
+.body--banner {
+	width: 100%;
+}
+.body--banner img {
+	width: 100%;
+}
+.body__main {
+	width: 90%;
+}
+.body__main__section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.body__main__section--article {
+	box-sizing: border-box;
+	width: 90%;
+	background-color: var(--Blanco);
+	margin-bottom: 10px;
+	position: relative;
+}
+.body__main__section--article:hover .body__main__section--article__description {
+	display: initial;
+}
+.body__main__section--article__description {
+	display: none; /* M04C07 - ... descripción del producto esté oculta, a menos que los usuarios le pasen el mouse por arriba. */
+}
+.body__main__section--article img {
+	width: 100%;
+}
+.body__main__section--article div {
+	border-top: 1px solid var(--GrisClaro);
+	padding: 15px;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+.body__main__section--article .fa-truck {
+	background-color: var(--Blanco);
+	color: var(--Verde);
+	border: 1px solid var(--Verde);
+	border-radius: 50%;
+	padding: 8px;
+	font-size: var(--tamañoIconoPequeño);
+	position: absolute;
+	right: 20px;
+	top: -18px;
+}
+.body__main__section--article:hover .fa-truck { /* M04C07 - ... el ícono del camión de envío gira 90° hacia arriba suavemente cuando pasamos el mouse por encima */
+	animation-name: camion;
+	animation-duration: 1s;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+.body__main__section--article h3 {
+	color: var(--GrisOscuro);
+	display: none;
+}
+.body__main__article--precio {
+	font-size: var(--tamañoPrecios);
+	width: 30%;
+}
+.body__main__article--descuento {
+	font-size: var(--tamañoDescuentos);
+	color: var(--Verde);
+	width: 70%;
+}
+
+@media (min-width: 768px) {
+	.body__main__section {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.body__main__section--article {
+		width: 48%;
+		margin-top: 15px;
+		transition: all 500ms;
+	}
+	.body__main__section--article:hover { /* M04C07 - cuando los usuarios le pasen el mouse por arriba, se visualice la sombra de la tarjeta de producto */
+		box-shadow : 0px 0px 10px rgb( 100, 100, 100 );
+	}
+	.body__main__section--article h3 {
+		display: block;
+	}
+}
+@media (min-width: 1024px) {
+	.body__main__section--article {
+		width: 22%;
+		align-self: stretch;
+	}
+}
+
+@keyframes camion {
+	0% {
+		transform: rotate(-45deg);
+	}
+	100% {
+		transform: rotate(-90deg);
+	}
+}

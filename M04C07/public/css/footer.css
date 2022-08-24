@@ -1,0 +1,54 @@
+.body__footer {
+	width: 100%;
+	color: var(--GrisOscuro);
+	background-color: var(--Blanco);
+	text-align: center;
+	margin-top: 15px;
+}
+.body__footer h4, p {
+	margin: 0;
+	padding: 0;
+}
+.body__footer h4 {
+	font-size: var(--tamañoDescripciones);
+}
+.body__footer p {
+	font-size: var(--tamañoNormal);
+}
+.body__footer__section--article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 30px 0 30px;
+}
+.body__footer__section--article:last-child {
+	padding-bottom: 40px;
+}
+.body__footer__section--article:last-child p {
+	align-self: start;
+}
+.body__footer__section--article i {
+	color: var(--Celeste);
+	font-size: var(--tamañoIconoGrande);
+	margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+
+}
+@media (min-width: 1024px) { /* M04C07 - ... modificar el footer para que se visualice de la siguiente forma en dispositivos desktop. */
+	.body__footer__section {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.body__footer__section--article {
+		width: 33%;
+	}
+	.body__footer__section--article i:hover { /* M04C07 - ... cada vez que se pase el mouse por los íconos, estos deben cambiar de color. */
+		color: var(--Verde);
+	}
+	.body__footer__section--article:last-child {
+		width: 100%;
+	}
+}
